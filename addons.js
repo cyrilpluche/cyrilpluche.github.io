@@ -6,7 +6,7 @@ export default [
         price: 0,
         description: [
             'We can help you with a bank account opening process in different jurisdictions. Fees will be capped and transparent, provided all documents for KYC are provided.',
-        ],
+        ], 
         categories: [],
         jurisdictions: []
     },
