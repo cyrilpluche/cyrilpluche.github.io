@@ -8,12 +8,12 @@ $(document).ready(function(){
 
 		let header = html.split("<head>")[1].split("</head>")[0]
 		header = header.replace(`<title>vauban-static</title>`)
-		header = header.replace(`<link data-n-head="1"rel="icon"type="imagex-icon"href="favicon.ico">`)
-		header = header.replace(`<meta data-n-head="1" charset="utf-8">`)
-		header = header.replace(`<meta data-n-head="1" name="viewport" content="width=device-width initial-scale=1">`)
-		header = header.replace(`<meta data-n-head="1" data-hid="description" name="description" content="static components of vauban">`)
+		// header = header.replace(`<link data-n-head="1"rel="icon"type="imagex-icon"href="favicon.ico">`)
+		// header = header.replace(`<meta data-n-head="1" charset="utf-8">`)
+		// header = header.replace(`<meta data-n-head="1" name="viewport" content="width=device-width initial-scale=1">`)
+		// header = header.replace(`<meta data-n-head="1" data-hid="description" name="description" content="static components of vauban">`)
 		console.log(header)
-		
+
 		document.getElementsByTagName("head").innerHTML += header
 		document.getElementById("vauban-structurer").innerHTML = structurer
 		document.getElementById("vauban-structurer").style["display"] = "block";
