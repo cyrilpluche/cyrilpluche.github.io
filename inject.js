@@ -3,7 +3,7 @@ $(document).ready(function(){
 	// $('#vauban-structurer').load("https://cyrilpluche.github.io/");
 	$.get("https://cyrilpluche.github.io/", function( html ) {
 		// my_var contains whatever that request returned
-		let structurer = html
+		let structurer = html 
 		// structurer = structurer.replace(`<title>vauban-static</title>`)
 		// structurer = structurer.replace(`<link data-n-head="1"rel="icon"type="imagex-icon"href="favicon.ico">`)
 		// structurer = structurer.replace(`<meta data-n-head="1" charset="utf-8">`)
