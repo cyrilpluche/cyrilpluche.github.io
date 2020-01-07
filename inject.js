@@ -18,7 +18,7 @@ $(document).ready(function(){
 	document.getElementById("vauban-structurer").style["display"] = "block";
 
 
-
+ 
 	// $.get(url, function( html ) {
 	// 	// my_var contains whatever that request returned
 	// 	let structurer = html.split("<body>")[1].split("</body>")[0] 
