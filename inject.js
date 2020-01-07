@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
-	const originTitle = document.getElementsByTagName("head").innerHTML
-	console.log({originTitle})
-	originTitle = originTitle.split("<title>")[1].split("</title>")[0]
-	console.log({originTitle}) 
+	// const originTitle = document.getElementsByTagName("head").innerHTML
+	// console.log({originTitle})
+	// originTitle = originTitle.split("<title>")[1].split("</title>")[0]
+	// console.log({originTitle}) 
 
 	document.getElementById("vauban-structurer").style["display"] = "none";
 	const url = "https://cyrilpluche.github.io"
 	$('#vauban-structurer').load(url);
 
 	let header = document.getElementsByTagName("head").innerHTML
-	header = header.replace(`<title>vauban-static</title>`, originTitle)
+	header = header.replace(`<title>vauban-static</title>`, "Vauban - Next-gen fund structuring and administration")
 
 	console.log({header})
 	document.getElementsByTagName("head").innerHTML = header
