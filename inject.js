@@ -12,7 +12,7 @@ $(document).ready(function(){
 		// header = header.replace(`<meta data-n-head="1" charset="utf-8">`)
 		// header = header.replace(`<meta data-n-head="1" name="viewport" content="width=device-width initial-scale=1">`)
 		// header = header.replace(`<meta data-n-head="1" data-hid="description" name="description" content="static components of vauban">`)
-		console.log(header)
+		console.log(header) 
 
 		document.getElementsByTagName("head").innerHTML += header
 		document.getElementById("vauban-structurer").innerHTML = structurer
