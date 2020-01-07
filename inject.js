@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	document.getElementById("vauban-structurer").style["display"] = "none";
-	// $('#vauban-structurer').load("https://cyrilpluche.github.io/");
 	const url = "https://cyrilpluche.github.io"
+	// $('#vauban-structurer').load("https://cyrilpluche.github.io/");
 	$.get(url, function( html ) {
 		// my_var contains whatever that request returned
 		let structurer = html.split("<body>")[1].split("</body>")[0] 
@@ -14,7 +14,7 @@ $(document).ready(function(){
 		// header = header.replace(`<meta data-n-head="1" data-hid="description" name="description" content="static components of vauban">`)
 		console.log(header) 
 
-		$("head").insertAfter(header)
+		document.getElementsByClassName("head").innerHTML += header
 		document.getElementById("vauban-structurer").innerHTML = structurer
 		document.getElementById("vauban-structurer").style["display"] = "block";
 	});
