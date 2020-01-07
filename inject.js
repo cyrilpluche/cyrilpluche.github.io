@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	const originTitle = document.getElementsByTagName("head").innerHTML
+	console.log({originTitle})
 	originTitle = originTitle.split("<title>")[1].split("</title>")[0]
 	console.log({originTitle})
 
