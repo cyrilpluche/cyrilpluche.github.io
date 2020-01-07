@@ -14,7 +14,8 @@ $(document).ready(function(){
 		// header = header.replace(`<meta data-n-head="1" data-hid="description" name="description" content="static components of vauban">`)
 		console.log(header) 
 
-		document.getElementsByClassName("head").innerHTML += header
+		document.getElementsByTagName("head").innerHTML += header
+		console.log(document.getElementsByTagName("head").innerHTML)
 		document.getElementById("vauban-structurer").innerHTML = structurer
 		document.getElementById("vauban-structurer").style["display"] = "block";
 	});
