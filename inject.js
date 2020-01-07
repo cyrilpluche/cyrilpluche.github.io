@@ -7,7 +7,7 @@ $(document).ready(function(){
 		let structurer = html.split("<body>")[1].split("</body>")[0] 
 
 		let header = html.split("<head>")[1].split("</head>")[0]
-		header = header.replace(`<title>vauban-static</title>`)
+		// header = header.replace(`<title>vauban-static</title>`)
 		// header = header.replace(`<link data-n-head="1"rel="icon"type="imagex-icon"href="favicon.ico">`)
 		// header = header.replace(`<meta data-n-head="1" charset="utf-8">`)
 		// header = header.replace(`<meta data-n-head="1" name="viewport" content="width=device-width initial-scale=1">`)
